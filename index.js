@@ -133,6 +133,7 @@ function SelectedParty() {
   const $delete = $party.querySelector("button");
   $delete.addEventListener("click", () => {
     removeParty(selectedParty.id);
+    selectedParty = "";
   });
 
   return $party;
